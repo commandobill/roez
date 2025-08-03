@@ -31,7 +31,7 @@
 
 ---
 
-![Single Objectives](roez-single.png)
+![Single Objectives](roez-single.PNG)
 
 ## 🔧 Installation
 
