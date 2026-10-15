@@ -316,13 +316,13 @@ end
 
 --──────────────────────────── Main Render Loop ──────────────────────────
 function ui.render(state, profiles)
-    styles.push_theme()
     if not ui.show then return end
+    styles.push_theme()
 
     imgui.SetNextWindowSize({ 900, 620 }, ImGuiCond_FirstUseEver)
     local open = { ui.show }
     if not imgui.Begin('roEZ', open) then
-        imgui.End(); return
+        imgui.End(); styles.pop_theme(); return
     end
 
     if imgui.BeginTabBar("roez_tabs") then
